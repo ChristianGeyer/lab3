@@ -172,7 +172,7 @@ int main(int argc, char** argv)
     printf("\n");
 
     // extract data
-    data_size = byte_unstuffing(buf+4, buf_size-6, data, 255);
+    data_size = byte_unstuffing(buf+4, buf_size-6, data, 255-4);
     // print data
     printf("data: ");
     print_message(data, data_size);
